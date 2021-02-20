@@ -1,0 +1,132 @@
+<?php
+  include_once 'includes/dbh.inc.php';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Covid-19 Assistance & Monitoring Desk</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="img/LOGO 3.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet"> -->
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+      <!-- <img src="assets/img/logo-header-white.png" alt="San Juan Logo" class="logo"></a> -->
+      <!--  <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a style="font-size: 20px; color: #ffc451;">Covid-19 Assistance and Monitoring Desk: Admin Panel</a></li>
+
+      </nav> -->
+      <!-- .nav-menu -->
+
+      <!-- Image and text -->
+      <nav class="navbar">
+        <a class="navbar-brand" href="admin.php">
+          <img src="assets/img/logo-header-white.png" width="30" height="30" class="d-inline-block align-top" alt="San Juan Logo">
+          <span style="color:#FFC62B;"> Covid-19 Assistance and Monitoring Desk </span>
+        </a>
+      </nav>
+
+     <a href="includes/logout.inc.php" class="get-started-btn scrollto">Logout</a> 
+      
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-xl-6 col-lg-8">
+          <?php
+            $sql = "SELECT * FROM surveylist;";
+            $result = mysqli_query($conn, $sql);
+            $resultCheck = mysqli_num_rows($result);
+
+            if ($resultCheck > 0) {
+              while ($row = mysqli_fetch_assoc($result)) {
+                echo $row['id_no'] . "<br";
+              }
+             }
+          ?>
+        </div>
+      </div>
+
+    </div>
+    
+  </section><!-- End Hero -->
+
+  
+
+  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
