@@ -47,7 +47,7 @@
                 </li>
             </ul>
         </nav>
-        <div id="layoutSidenav" >
+        <div id="layoutSidenav">
             <div id="layoutSidenav_nav">
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion" style="background-color:black;opacity:85%;">
                     <div class="sb-sidenav-menu">
@@ -68,13 +68,13 @@
                     </div>
                 </nav>
             </div>
-            <div id="layoutSidenav_content" >
+            <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid">
-                        <h1 class="mt-4">Admin Table</h1>
+                        <h1 class="mt-4">User Table</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                            <li class="breadcrumb-item active">Admin</li>
+                            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                            <li class="breadcrumb-item active">User</li>
                         </ol>
                         
                         <div class="card mb-4">
@@ -101,6 +101,8 @@
                                                 <td>2011/04/25</td>
                                                 <td>$320,800</td>
                                             </tr>
+                                            
+                                            
                                         </tbody>
                                     </table>
                                 </div>
@@ -109,7 +111,7 @@
                     </div>
                 </main>
                 <!-- ======= Footer ======= -->
-                <footer id="footer" style="position:fixed; width: 100%; bottom:0;">
+                <footer id="footer">
                   <div class="container">
                     <div class="copyright">
                       &copy; Copyright <strong><span>COVID-19 Assistance & Monitoring Desk</span></strong>. All Rights Reserved
@@ -118,9 +120,11 @@
                         Designed by JJJAM</a>
                     </div>
                   </div>
-                </footer><!-- End Footer -->
+                </footer>
+                <!-- End Footer -->
             </div>
-          
+            
+
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
